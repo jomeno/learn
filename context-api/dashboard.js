@@ -8,10 +8,8 @@ export default function Dashboard(){
     const [salesTotal, setSalesTotal] = useState(0)
     const [ordersTotal, setOrdersTotal] = useState(0)
     
-    
-
-    // Notice that the Dashboard components wraps all its children needing the shared state 
-    // within the Context.Provider. See performance notes below about the value prop.
+    // Notice that the Dashboard component wraps all children needing the shared states 
+    // within the DashboardContext.Provider. See performance notes about the value prop.
     return (
         <DashboardContext.Provider value={{ 
             salesTotal, 
@@ -22,7 +20,6 @@ export default function Dashboard(){
             <div>
                 <h3>Total Revenue: {salesTotal + ordersTotal}</h3>
                 |
-
                 <SalesCard/> | <OrdersCard/>
             </div>
         </DashboardContext.Provider>
