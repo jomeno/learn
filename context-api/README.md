@@ -38,7 +38,7 @@ The DashbordContext is created in the dashboard.js file and is provided to the D
 The SalesCard and OrdersCard components access the shared data using the useContext hook.
 The Dashboard component calculates and displays the total revenue by summing the sales and orders totals.
 
-$ Contributing
+# Contributing
 Contributions are welcome! Feel free to submit a pull request or open an issue to suggest improvements.
 
 [Preview](./basic-dashboard.png)
