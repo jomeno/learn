@@ -25,11 +25,14 @@ learn/
 │
 └── ...
 
+
 context-api/dashboard.js: Contains the Dashboard component that aggregates data from the Sales and Orders cards.
+
 context-api/SalesCard.js: Displays the total sales.
+
 context-api/OrdersCard.js: Displays the total orders.
 
-#How It Works
+# How It Works
 
 The DashbordContext is created in the dashboard.js file and is provided to the Dashboard and its child components.
 The SalesCard and OrdersCard components access the shared data using the useContext hook.
